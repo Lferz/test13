@@ -1,13 +1,17 @@
-local imageId = "15231232788"
+local text = "Это ратник бро"
+local textSize = 90 -- Размер текста
+local font = Enum.Font.SourceSansBold -- Шрифт текста
 
--- Создание объекта ImageLabel
-local imageLabel = Instance.new("ImageLabel")
-imageLabel.Image = "rbxassetid://"..imageId
-imageLabel.Size = UDim2.new(0, 200, 0, 200)
+-- Создание объекта TextLabel
+local textLabel = Instance.new("TextLabel")
+textLabel.Text = text
+textLabel.Size = UDim2.new(0, 200, 0, 50)
+textLabel.Position = UDim2.new(0, 100, 0, 100)
+textLabel.Parent = game.Workspace -- или любой другой родительский объект, к которому вы хотите добавить текст
 
--- Добавление ImageLabel на экран игры
-local player = game.Players.LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-local screenGui = Instance.new("ScreenGui")
-imageLabel.Parent = screenGui
-screenGui.Parent = playerGui
+-- Если вы хотите, чтобы текст был редактируемым, используйте объект TextBox вместо TextLabel
+-- local textLabel = Instance.new("TextBox")
+-- textLabel.Text = text
+-- textLabel.Size = UDim2.new(0, 200, 0, 50)
+-- textLabel.Position = UDim2.new(0, 100, 0, 100)
+-- textLabel.Parent = game.Workspace
