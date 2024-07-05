@@ -1,6 +1,4 @@
 local text = "Это ратник блатуха"
-local textSize = 90 -- Размер текста
-local font = Enum.Font.SourceSansBold -- Шрифт текста
 
 -- Создание объекта TextLabel
 local textLabel = Instance.new("TextLabel")
