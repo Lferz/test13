@@ -1,9 +1,9 @@
-local imageUrl = "https://i.ytimg.com/vi/H4Ng2apIr5U/maxresdefault.jpg"
+local imageUrl = "https://static.wikia.nocookie.net/evangelion/images/5/5a/Asuka_Strikes%21.png/revision/latest?cb=20121216051148"
 
 -- Создание объекта ImageLabel
 local imageLabel = Instance.new("ImageLabel")
 imageLabel.Image = imageUrl
-imageLabel.Size = UDim2.new(0, 600, 0, 600)
+imageLabel.Size = UDim2.new(0, 1600, 0, 1600)
 
 -- Добавление ImageLabel на экран игры
 local player = game.Players.LocalPlayer
