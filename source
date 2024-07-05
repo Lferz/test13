@@ -1,15 +1,13 @@
-local text = "Это ратник блатуха"
+-- Получение модели персонажа
+local character = game.Workspace.YourCharacter -- Замените "EblanJPG" на имя вашего персонажа
 
--- Создание объекта TextLabel
-local textLabel = Instance.new("TextLabel")
-textLabel.Text = text
-textLabel.Size = UDim2.new(0, 200, 0, 50)
-textLabel.Position = UDim2.new(0, 100, 0, 100)
-textLabel.Parent = game.Workspace -- или любой другой родительский объект, к которому вы хотите добавить текст
+-- Увеличение модели персонажа
+local function increaseSize(character)
+    local humanoid = character:FindFirstChild("Humanoid")
+    if humanoid then
+        humanoid.Scale = Vector3.new(2, 2, 2) -- Увеличьте значения вектора, чтобы увеличить размер модели
+    end
+end
 
--- Если вы хотите, чтобы текст был редактируемым, используйте объект TextBox вместо TextLabel
--- local textLabel = Instance.new("TextBox")
--- textLabel.Text = text
--- textLabel.Size = UDim2.new(0, 200, 0, 50)
--- textLabel.Position = UDim2.new(0, 100, 0, 100)
--- textLabel.Parent = game.Workspace
+-- Пример использования:
+increaseSize(character)
